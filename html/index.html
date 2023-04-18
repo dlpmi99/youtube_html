@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Website Landing Page</title>
+    <link rel="stylesheet" href="colastyle.css">
+</head>
+<body>
+    <section class="sec">
+    <header>
+        <a href="#"><img src="/img.cola/logo.png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>That's What<br><span>I like</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dignissimos ea sapiente nemo sit repudiandae nobis! Cumque quia autem consectetur aperiam provident, alias consequuntur? Eius odit hic similique ullam libero.</p>
+            <a href="#">View All Products</a>
+        </div>
+        <div class="imgBox">
+            <img src="/img.cola/pepsi001.png" class="pepsi">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="/img.cola/pepsi001.png" onclick="imgSlider('/img.cola/pepsi001.png');changeDgcolor('#0062b3')"></li>
+        <li><img src="/img.cola/pepsi002.png" onclick="imgSlider('/img.cola/pepsi002.png');changeDgcolor('#e60c2c')"></li>
+        <li><img src="/img.cola/pepsi003.png" onclick="imgSlider('/img.cola/pepsi003.png');changeDgcolor('#1e1e1e')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><img src="/img.cola/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="/img.cola/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="/img.cola/instagram.png" alt=""></a></li>
+    </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+                document.querySelector('.pepsi').src = anything;
+            }
+        function changeDgcolor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
